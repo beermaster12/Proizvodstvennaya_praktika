@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sty.css">
+  <title>Каталог одежды</title>
+</head>
+<body>
+  <header>
+    <div class="container flex-center-header">
+      <h1>Каталог одежды</h1>
+    </div>
+    <nav>
+      <div class="nav-container">
+        <div class="filter-gender dropdown">
+          <button class="dropbtn">Вся</button>
+          <div class="dropdown-content">
+            <a href="#" data-value="женская">Женская</a>
+            <a href="#" data-value="мужская">Мужская</a>
+            <a href="#" data-value="вся">Вся</a>
+          </div>
+        </div>
+
+        <div class="filter-type dropdown">
+          <button class="dropbtn">Вся</button>
+          <div class="dropdown-content">
+            <a href="#" data-value="вся">Вся</a>
+            <a href="#" data-value="верхняя">Верхняя</a>
+            <a href="#" data-value="обувь">Обувь</a>
+          </div>
+        </div>
+
+   <div class="filter-sort dropdown" >
+  <button class="dropbtn">Цена ↓</button>
+  <div class="dropdown-content">
+    <a href="#" data-value="price_desc">Цена ↓</a>
+    <a href="#" data-value="price_asc">Цена ↑</a>
+  </div>
+</div>
+
+        <div class="brend__container">
+          <a href="#" data-brand="CUN"><div class="card-brend"><span>CUN</span></div></a>
+          <a href="#" data-brand="MO"><div class="card-brend"><span>MO</span></div></a>
+          <a href="#" data-brand="CR"><div class="card-brend"><span>CR</span></div></a>
+          <a href="#" data-brand="RE"><div class="card-brend"><span>RE</span></div></a>
+          <a href="#" data-brand="HO"><div class="card-brend"><span>HO</span></div></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="cotalog__container">
+      <div class="container" id="catalog">
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="pre__footer"><p>Каталог одежды 2026 © Максим Ф.</p></div>
+    <div class="post__footer"></div>
+  </footer>
+
+  <div id="popup" class="popup-overlay" style="display:none;">
+    <div class="popup-content">
+      <span id="popup-close" class="popup-close">&times;</span>
+      <div class="popup-image">
+        <img id="popup-img" src="" alt="" style="max-width: 100%; height: auto;">
+      </div>
+      <div class="popup-text">
+        <h2 id="popup-name"></h2>
+        <p id="popup-price"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
